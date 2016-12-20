@@ -12,9 +12,13 @@
 		937E53461E09B77B00284C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937E53441E09B77B00284C23 /* Main.storyboard */; };
 		937E53481E09B77B00284C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937E53471E09B77B00284C23 /* Assets.xcassets */; };
 		937E534B1E09B77B00284C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937E53491E09B77B00284C23 /* LaunchScreen.storyboard */; };
+		937E53531E09B98D00284C23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 937E53521E09B98D00284C23 /* GoogleService-Info.plist */; };
+		AD9E47F36ADE15FEE43FAC22 /* Pods_pushmynotifs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12FA4130EC7992DB2249485 /* Pods_pushmynotifs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BAA7D1C3EAC93AED01ED8A7 /* Pods-pushmynotifs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushmynotifs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pushmynotifs/Pods-pushmynotifs.debug.xcconfig"; sourceTree = "<group>"; };
+		8E25C7C2517660B0FEA2E277 /* Pods-pushmynotifs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushmynotifs.release.xcconfig"; path = "Pods/Target Support Files/Pods-pushmynotifs/Pods-pushmynotifs.release.xcconfig"; sourceTree = "<group>"; };
 		937E533D1E09B77B00284C23 /* pushmynotifs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pushmynotifs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937E53401E09B77B00284C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		937E53421E09B77B00284C23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		937E53471E09B77B00284C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		937E534A1E09B77B00284C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		937E534C1E09B77B00284C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		937E53521E09B98D00284C23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A12FA4130EC7992DB2249485 /* Pods_pushmynotifs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pushmynotifs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9E47F36ADE15FEE43FAC22 /* Pods_pushmynotifs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4236942403C72C631C93D9B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BAA7D1C3EAC93AED01ED8A7 /* Pods-pushmynotifs.debug.xcconfig */,
+				8E25C7C2517660B0FEA2E277 /* Pods-pushmynotifs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		937E53341E09B77B00284C23 = {
 			isa = PBXGroup;
 			children = (
 				937E533F1E09B77B00284C23 /* pushmynotifs */,
 				937E533E1E09B77B00284C23 /* Products */,
+				4236942403C72C631C93D9B3 /* Pods */,
+				A068555904B1926323BEC7A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,55 @@
 		937E533F1E09B77B00284C23 /* pushmynotifs */ = {
 			isa = PBXGroup;
 			children = (
-				937E53401E09B77B00284C23 /* AppDelegate.swift */,
-				937E53421E09B77B00284C23 /* ViewController.swift */,
-				937E53441E09B77B00284C23 /* Main.storyboard */,
-				937E53471E09B77B00284C23 /* Assets.xcassets */,
-				937E53491E09B77B00284C23 /* LaunchScreen.storyboard */,
-				937E534C1E09B77B00284C23 /* Info.plist */,
+				937E53561E09BC2C00284C23 /* View */,
+				937E53551E09BC1600284C23 /* Controller */,
+				937E53541E09BC0200284C23 /* Resources */,
+				937E53571E09BC4400284C23 /* Services */,
 			);
 			path = pushmynotifs;
+			sourceTree = "<group>";
+		};
+		937E53541E09BC0200284C23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				937E53471E09B77B00284C23 /* Assets.xcassets */,
+				937E534C1E09B77B00284C23 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		937E53551E09BC1600284C23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				937E53401E09B77B00284C23 /* AppDelegate.swift */,
+				937E53421E09B77B00284C23 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		937E53561E09BC2C00284C23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				937E53491E09B77B00284C23 /* LaunchScreen.storyboard */,
+				937E53441E09B77B00284C23 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		937E53571E09BC4400284C23 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				937E53521E09B98D00284C23 /* GoogleService-Info.plist */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		A068555904B1926323BEC7A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A12FA4130EC7992DB2249485 /* Pods_pushmynotifs.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 937E534F1E09B77B00284C23 /* Build configuration list for PBXNativeTarget "pushmynotifs" */;
 			buildPhases = (
+				09AAADD2FDF7266F339A81D0 /* [CP] Check Pods Manifest.lock */,
 				937E53391E09B77B00284C23 /* Sources */,
 				937E533A1E09B77B00284C23 /* Frameworks */,
 				937E533B1E09B77B00284C23 /* Resources */,
+				9CA839EABA11D740B90D8186 /* [CP] Embed Pods Frameworks */,
+				06E85CBE163F9328AD5DE0AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +186,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				937E534B1E09B77B00284C23 /* LaunchScreen.storyboard in Resources */,
+				937E53531E09B98D00284C23 /* GoogleService-Info.plist in Resources */,
 				937E53481E09B77B00284C23 /* Assets.xcassets in Resources */,
 				937E53461E09B77B00284C23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06E85CBE163F9328AD5DE0AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pushmynotifs/Pods-pushmynotifs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09AAADD2FDF7266F339A81D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA839EABA11D740B90D8186 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pushmynotifs/Pods-pushmynotifs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		937E53391E09B77B00284C23 /* Sources */ = {
@@ -258,6 +369,7 @@
 		};
 		937E53501E09B77B00284C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BAA7D1C3EAC93AED01ED8A7 /* Pods-pushmynotifs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pushmynotifs/Info.plist;
@@ -270,6 +382,7 @@
 		};
 		937E53511E09B77B00284C23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E25C7C2517660B0FEA2E277 /* Pods-pushmynotifs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pushmynotifs/Info.plist;
@@ -299,6 +412,7 @@
 				937E53511E09B77B00284C23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

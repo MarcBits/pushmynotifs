@@ -23,6 +23,7 @@ xcuserdata/
 *.xcuserstate
 
 ## Custom
+GoogleService-Info.plist
 
 ## Obj-C/Swift specific
 *.hmap
